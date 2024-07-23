@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-box">
+        <div class="box">
+            <div class="first-box">
+                <div class="heading">
+                    <h1>Mortage Calculator</h1>
+                    <a href="" id="clear" onclick="clearScreen()">clear all</a>
+                </div>
+                <div class="form">
+                    <p>Mortage Amount</p>
+                    <div class="amount">
+                        <i class="fa-solid fa-sterling-sign"></i>
+                        <input type="number" id="amount">
+                    </div>
+                    <div class="mortage">
+                        <div>
+                            <p>Mortage term</p>
+                            <div class="years">
+                                <input type="number" id="years">
+                                <p>years</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Interest rate</p>
+                            <div class="percentage">
+                                <input type="number" id="rate" step="0.1" required>
+                                <p>%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="message"></div>
+                    <p class="type">Mortage Type</p>
+                    <div class="payment">
+                        <input type="radio" name="payment" value="Repayment"> Repayment
+                    </div>
+                    <div class="Interest">
+                        <input type="radio" name="payment" value="Interest"> Interest Only
+                    </div>
+                    <button onclick="calculate()"><i class="fa-duotone fa-solid fa-calculator"></i>   calculate Repayment</button>
+                </div>
+            </div>
+            <div class="second-box">
+                <h3>Your results</h3> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, repudiandae enim incidunt porro harum labore et
+                </p>
+                <div class="total">
+                    <P>Your monthly repayment</P>
+                    <div class="result">
+                        <i class="fa-solid fa-sterling-sign"></i>
+                        <h1 id="result"></h1>
+                    </div>
+                    <h5>Total you'll repay over the term</h5><br>
+                    <h2><i class="fa-solid fa-sterling-sign"></i> 100,000</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
